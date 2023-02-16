@@ -1,0 +1,125 @@
+body{
+    background-color: brown;
+    color: white;
+    margin: 0;
+}
+
+article{
+    background-color: rgb(8, 8, 8);
+    color: rgb(245, 242, 242);
+    border-bottom: 1px solid white;
+    padding: 1.5rem;
+}
+article>header>hgroup{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+article>header>hgroup>h2{
+    display: flex;
+    align-items: center;
+}
+article>header>hgroup>h2>img{
+    margin-right: 1rem;
+}
+aside>div>img{
+    background-color: #fff;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+aside>div{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 0.6rem;
+    border-bottom: 1px dashed #fff;
+ }
+section{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-auto-rows: auto;
+    gap: 3rem;
+}
+nav{
+    font-size: 1.3rem;
+    border-bottom: 5px solid white;
+}
+nav>ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 0.5rem;
+}
+nav>ul{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: auto;
+    gap:1rem;
+    padding-bottom: 1.5rem;
+}
+
+
+ 
+
+nav>ul>li>a:hover {
+    text-decoration: underline;
+    color: greenyellow;
+  }
+section>header{
+    grid-column: span 12;
+}
+section>main{
+    grid-column: span 8;
+}
+section>aside{
+    grid-column: span 4;
+}
+section>footer{
+    grid-column: span 12;
+}
+nav>ul>li{
+    list-style: none;
+}
+nav>ul>li>a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.resaltado{
+    color: yellow;
+}
+
+.imagenes{
+    border: 4px solid white;
+    display: inline;
+}
+.palabras{
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-style: italic;
+}
+
+
+#titulo-del_blog{
+    text-align: center;
+    font-size: 3rem;
+}
+
+#footer_blog{
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    font-size: 1.3rem;
+}
+#footer_blog div:nth-child(2){
+    font-size: 0.9rem;
+}
